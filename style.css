@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(46, 20, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('b.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    border: solid;
+    margin-top: 200px;
+    padding: 20px;
+    border-radius: 100px 100px 500px 100px;
+    background-color: rgb(173, 31, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #110101;
+    border-color: rgb(223, 223, 223);
+    background-image: url('c.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+input {
+    color: #ffffff;
+    margin: 10px;
+    background-color: rgb(105, 82, 119);
+    border: none;
+    outline: none;
+}
+
+.input-dep {
+    padding: 10px;
+    width: 50px;
+    height: 10px;
+    margin: 25px;
+    border-radius: 700px 50px 50px 50px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+        padding: 15px;
+        border-radius: 50px 50px 200px 50px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    input, .input-dep {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 50px;
+        font-size: 16px;
+    }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+
+li.completed {
+  color: green;
+  text-decoration: line-through;
+}
